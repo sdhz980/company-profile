@@ -57,29 +57,29 @@ const Navbar = () => {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
                   
-                  <Link href="/about" >
-                      <li className="text-xl rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                              About
-                      </li>
-                  </Link>
+                    <li onClick={handleMenuMobile} className="text-xl select-none cursor-pointer rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                        <Link href="/" >
+                                    Home
+                        </Link>
+                    </li>
                   
-                  <Link href="/product" >
-                      <li className="text-xl rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                              Product
-                      </li>
-                  </Link>
+                    <li onClick={handleMenuMobile} className="text-xl select-none cursor-pointer rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                        <Link href="/product" >
+                                    Services
+                        </Link>
+                    </li>
                   
-                  <Link href="/team" >
-                      <li className="text-xl rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                              Team
-                      </li>
-                  </Link>
+                    <li onClick={handleMenuMobile} className="text-xl select-none cursor-pointer rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                        <Link href="/about" >
+                                    About
+                        </Link>
+                    </li>
                   
-                  <Link href="/" >
-                      <li className="text-xl rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                              Home
-                      </li>
-                  </Link>
+                    <li onClick={handleMenuMobile} className="text-xl select-none cursor-pointer rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                        <Link href="/team" >
+                                    Our teams
+                        </Link>
+                    </li>
 
               </ul>
             </div>
