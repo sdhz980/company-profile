@@ -1,7 +1,28 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
+import { useDispatch, useSelector } from 'react-redux'
+import { getTeamMemberLength, setTeamMember } from '@/lib/redux/globalSlicer'
+import { RootState } from '@/lib/redux/store'
+import getTeamMember from '../api/getTeamMember'
+import Image from 'next/image'
 
 const page = () => {
+    const dispatch = useDispatch();
+    const teamMember = useSelector((state : RootState) => state.globalReducer.store.memberTeam)
+    const roleMember = useSelector((state : RootState) => state.globalReducer.store.roleMember)
+
+    const handleGetTeamMember = async() => {
+        if (!teamMember.length) {
+            const response = await getTeamMember();
+            dispatch(setTeamMember(response.results))
+        }
+    }
+
+    useEffect(()=> {
+        handleGetTeamMember();
+    },[])
+
   return (
     <>
     
@@ -65,61 +86,23 @@ const page = () => {
                 <div className='flex flex-wrap items-center justify-center gap-8'>
                     
 
-                    <div className='flex flex-col gap-4 md:w-[25%] w-[150px]'>
-                        <img className='rounded-2xl' src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="" />
-                            <div>
-                                <h2 className='font-semibold'>Roy Osborne</h2>
-                                <p>CEO and co-founder</p>
-                            </div>
-                    </div>
+                { teamMember?.map((item:any,index:number) => {
+                        console.log(item);
+                        const name = `${item?.name?.first} ${item?.name?.last}`; 
+                        return (
 
-                    <div className='flex flex-col gap-4 md:w-[25%] w-[150px]'>
-                        <img className='rounded-2xl' src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="" />
-                            <div>
-                                <h2 className='font-semibold'>Roy Osborne</h2>
-                                <p>CEO and co-founder</p>
+                            <div key={index} className='flex flex-col gap-4 md:w-[25%] w-[150px]'>
+                                <Image src={item.picture?.large} alt={name} loading='lazy' width={1000} height={1000} className='rounded-2xl' />
+                                    <div>
+                                        <h2 className='font-semibold'>{name}</h2>
+                                        <p>{ roleMember[index] ? roleMember[index] : "Employee" }</p>
+                                    </div>
                             </div>
-                    </div>
 
-                    <div className='flex flex-col gap-4 md:w-[25%] w-[150px]'>
-                        <img className='rounded-2xl' src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="" />
-                            <div>
-                                <h2 className='font-semibold'>Roy Osborne</h2>
-                                <p>CEO and co-founder</p>
-                            </div>
-                    </div>
+                        )
+                    })
 
-                    <div className='flex flex-col gap-4 md:w-[25%] w-[150px]'>
-                        <img className='rounded-2xl' src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="" />
-                            <div>
-                                <h2 className='font-semibold'>Roy Osborne</h2>
-                                <p>CEO and co-founder</p>
-                            </div>
-                    </div>
-
-                    <div className='flex flex-col gap-4 md:w-[25%] w-[150px]'>
-                        <img className='rounded-2xl' src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="" />
-                            <div>
-                                <h2 className='font-semibold'>Roy Osborne</h2>
-                                <p>CEO and co-founder</p>
-                            </div>
-                    </div>
-
-                    <div className='flex flex-col gap-4 md:w-[25%] w-[150px]'>
-                        <img className='rounded-2xl' src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="" />
-                            <div>
-                                <h2 className='font-semibold'>Roy Osborne</h2>
-                                <p>CEO and co-founder</p>
-                            </div>
-                    </div>
-
-                    <div className='flex flex-col gap-4 md:w-[25%] w-[150px]'>
-                        <img className='rounded-2xl' src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="" />
-                            <div>
-                                <h2 className='font-semibold'>Roy Osborne</h2>
-                                <p>CEO and co-founder</p>
-                            </div>
-                    </div>
+                }
 
                 </div>
 

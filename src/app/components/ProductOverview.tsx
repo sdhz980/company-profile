@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const ProductOverview = () => {
@@ -13,8 +14,9 @@ const ProductOverview = () => {
 
         <div className='mt-[4%] grid md:grid-cols-2 gap-8 w-full'>
             
-            <div className='grid grid-flow-col px-4 py-4 pr-20 bg-white gap-4 rounded-lg'>
-                <svg fill="#000000" width="50px" height="80px" viewBox="0 0 24 24" id="Main" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title><path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"></path><path d="M10.49,10H15a1,1,0,0,0,0-2H13V7a1,1,0,0,0-2,0V8h-.51a2.5,2.5,0,0,0,0,5h3a.5.5,0,0,1,0,1H9a1,1,0,0,0,0,2h2v1a1,1,0,0,0,2,0V16h.51a2.5,2.5,0,0,0,0-5h-3a.5.5,0,0,1,0-1Z"></path></g></svg>
+            <div className='grid grid-flow-col items-center px-4 py-4 pr-20 bg-white gap-4 rounded-lg'>
+
+                <Image className='w-[50px]' src="/merchant.svg" alt='merchant' width={1000} height={1000} />
 
                 <div className='flex flex-col gap-1'>
                     <h2 className='font-semibold'>Small Business</h2>
@@ -23,8 +25,9 @@ const ProductOverview = () => {
 
             </div>
 
-            <div className='grid grid-flow-col px-4 py-4 pr-20 bg-white gap-4 rounded-lg'>
-                <svg fill="#000000" width="50px" height="80px" viewBox="0 0 24 24" id="Main" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title><path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"></path><path d="M10.49,10H15a1,1,0,0,0,0-2H13V7a1,1,0,0,0-2,0V8h-.51a2.5,2.5,0,0,0,0,5h3a.5.5,0,0,1,0,1H9a1,1,0,0,0,0,2h2v1a1,1,0,0,0,2,0V16h.51a2.5,2.5,0,0,0,0-5h-3a.5.5,0,0,1,0-1Z"></path></g></svg>
+            <div className='grid grid-flow-col items-center  px-4 py-4 pr-20 bg-white gap-4 rounded-lg'>
+
+                <Image className='w-[50px]' src="/statistic.svg" alt='merchant' width={1000} height={1000} />
 
                 <div className='flex flex-col gap-1'>
                     <h2 className='font-semibold'>Sales</h2>
@@ -33,8 +36,9 @@ const ProductOverview = () => {
 
             </div>
 
-            <div className='grid grid-flow-col px-4 py-4 pr-20 bg-white gap-4 rounded-lg'>
-                <svg fill="#000000" width="50px" height="80px" viewBox="0 0 24 24" id="Main" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title><path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"></path><path d="M10.49,10H15a1,1,0,0,0,0-2H13V7a1,1,0,0,0-2,0V8h-.51a2.5,2.5,0,0,0,0,5h3a.5.5,0,0,1,0,1H9a1,1,0,0,0,0,2h2v1a1,1,0,0,0,2,0V16h.51a2.5,2.5,0,0,0,0-5h-3a.5.5,0,0,1,0-1Z"></path></g></svg>
+            <div className='grid grid-flow-col items-center  px-4 py-4 pr-20 bg-white gap-4 rounded-lg'>
+
+                <Image className='w-[50px]' src="/service.svg" alt='merchant' width={1000} height={1000} />
 
                 <div className='flex flex-col gap-1'>
                     <h2 className='font-semibold'>Service</h2>
@@ -43,8 +47,9 @@ const ProductOverview = () => {
 
             </div>
 
-            <div className='grid grid-flow-col px-4 py-4 pr-20 bg-white gap-4 rounded-lg'>
-                <svg fill="#000000" width="50px" height="80px" viewBox="0 0 24 24" id="Main" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title><path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z"></path><path d="M10.49,10H15a1,1,0,0,0,0-2H13V7a1,1,0,0,0-2,0V8h-.51a2.5,2.5,0,0,0,0,5h3a.5.5,0,0,1,0,1H9a1,1,0,0,0,0,2h2v1a1,1,0,0,0,2,0V16h.51a2.5,2.5,0,0,0,0-5h-3a.5.5,0,0,1,0-1Z"></path></g></svg>
+            <div className='grid grid-flow-col items-center  px-4 py-4 pr-20 bg-white gap-4 rounded-lg'>
+
+                <Image className='w-[50px]' src="/megaphone.svg" alt='merchant' width={1000} height={1000} />
 
                 <div className='flex flex-col gap-1'>
                     <h2 className='font-semibold'>Marketing</h2>

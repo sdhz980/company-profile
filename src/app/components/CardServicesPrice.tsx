@@ -10,13 +10,14 @@ import {
   } from "@/components/ui/card"
   import { buttonVariants } from "@/components/ui/button"
   import { Button } from "@/components/ui/button"
+import { Check } from 'lucide-react'
 
 
 
 interface CardServiceProps {
     title : string;
     price: number;
-    listBenefit: [];
+    listBenefit: string[];
     isMain: boolean;
 }
 
@@ -32,8 +33,16 @@ const CardServicesPrice = ({title ,price ,listBenefit,isMain} :CardServiceProps)
             </div>
         </CardHeader>
 
-        <CardContent className='h-[300px]'>
-            
+        <CardContent className='h-[300px] p-8'>
+        
+          <ul className='flex flex-col gap-4'>
+            { listBenefit.map((item:any,index:number) => 
+                    <li className='flex gap-2 font-semibold' key={index}>
+                      <Check color="#ffc67e" />
+                      <p>{item}</p>
+                    </li>) }
+          </ul>
+
         </CardContent>
 
         <CardFooter className='grid gap-4 w-full'>

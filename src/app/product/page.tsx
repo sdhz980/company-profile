@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import CardServicesPrice from '../components/CardServicesPrice'
+import { ElitePackage, EnterprisePackage, EssentialPackage, TeamPackage } from '@/app/components/HomeServicePrice.config'
+
 
 const page = () => {
   return (
@@ -16,11 +18,11 @@ const page = () => {
 
             <div className='flex flex-wrap items-center justify-center gap-8'>
 
-                <CardServicesPrice isMain={false} title={"Essential"} price={15} listBenefit={[]}/>
-                <CardServicesPrice isMain={true} title={"Team"} price={49} listBenefit={[]}/>
-                <CardServicesPrice isMain={false} title={"Enterprise"} price={99} listBenefit={[]}/>
-                <CardServicesPrice isMain={false} title={"Elite"} price={199} listBenefit={[]}/>
-            
+                <CardServicesPrice title={"Essential"} isMain={false} price={15} listBenefit={[EssentialPackage]}/>
+                <CardServicesPrice title={"Team"} isMain={true} price={49} listBenefit={[TeamPackage]}/>
+                <CardServicesPrice title={"Enterprise"} isMain={false} price={99} listBenefit={[EnterprisePackage]}/>
+                <CardServicesPrice title={"Elite"} isMain={false} price={199} listBenefit={[ElitePackage]}/>
+
             </div>
 
             <div className='flex flex-col items-center text-center justify-center'>

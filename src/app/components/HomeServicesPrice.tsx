@@ -1,7 +1,9 @@
 import React from 'react'
 import CardServicesPrice from './CardServicesPrice'
+import { ElitePackage, EnterprisePackage, EssentialPackage, TeamPackage } from './HomeServicePrice.config'
 
 const HomeServicesPrice = () => {
+
   return (
 
     <div className='flex flex-col gap-10 items-center justify-center px-10 py-20'>
@@ -13,10 +15,10 @@ const HomeServicesPrice = () => {
 
         <div className='flex flex-row flex-wrap gap-10 items-center justify-center'>
 
-            <CardServicesPrice title={"Essential"} isMain={false} price={15} listBenefit={[]}/>
-            <CardServicesPrice title={"Team"} isMain={true} price={49} listBenefit={[]}/>
-            <CardServicesPrice title={"Enterprise"} isMain={false} price={99} listBenefit={[]}/>
-            <CardServicesPrice title={"Elite"} isMain={false} price={199} listBenefit={[]}/>
+            <CardServicesPrice title={"Essential"} isMain={false} price={15} listBenefit={EssentialPackage}/>
+            <CardServicesPrice title={"Team"} isMain={true} price={49} listBenefit={TeamPackage}/>
+            <CardServicesPrice title={"Enterprise"} isMain={false} price={99} listBenefit={EnterprisePackage}/>
+            <CardServicesPrice title={"Elite"} isMain={false} price={199} listBenefit={ElitePackage}/>
             
         </div>
 

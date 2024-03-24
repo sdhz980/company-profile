@@ -2,6 +2,8 @@ import { createSlice , PayloadAction } from "@reduxjs/toolkit";
 
 interface GlobalInitialState {
     store: {
+        roleMember: string[];
+        memberTeam : any;
         isNavbarMobile : boolean;
         navbarDarkTheme : boolean;
         navbarMobileShow : boolean;
@@ -10,6 +12,8 @@ interface GlobalInitialState {
 
 const initialState : GlobalInitialState = {
    store: {
+        roleMember: ["CEO","CTO","SEO","OB","Employee"],
+        memberTeam: [],
         isNavbarMobile : false,
         navbarDarkTheme : false,
         navbarMobileShow : false
@@ -26,13 +30,16 @@ export const global = createSlice({
 
         setNavbarMobile : (state , action : PayloadAction<boolean>) => {
             state.store.navbarMobileShow = action.payload;
-        }
+        },
 
-        // setLoading: (state,action : PayloadAction<string>) => {
-        //     state.app = action.payload;
-        // }
+        setTeamMember : (state , action : PayloadAction<any>) => {
+            state.store.memberTeam = (action.payload);
+        },
+        getTeamMemberLength : (state) => {
+            state.store.memberTeam.length;
+        }
     }
 })
 
-export const { setNavbarTheme , setNavbarMobile } = global.actions;
+export const { setNavbarTheme , setNavbarMobile , setTeamMember , getTeamMemberLength } = global.actions;
 export default global.reducer;

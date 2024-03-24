@@ -21,7 +21,7 @@ const Navbar = () => {
     <>
     <div className='transition-all'>
       <nav className="w-full fixed top-0 left-0 right-0 z-10">
-        <div className={`justify-between ${ navbarMobile ? "bg-[#6000c4]" : "bg-[#6000c4]"} px-4 mx-auto w-full md:items-center md:flex md:px-8`}>
+        <div className={`justify-between transition-all ${ navbarMobile ? "bg-[#6000c4]" : "bg-[#6000c4]"} px-4 mx-auto w-full md:items-center md:flex md:px-8`}>
           <div>
             <div className="flex items-center justify-between py- md:py-1 md:block">
               {/* LOGO */}
@@ -50,26 +50,31 @@ const Navbar = () => {
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                    <a href="/about">
-                        About
-                    </a>
-                </li>
-                <li className="text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                  <a href="/product">
-                    Product
-                  </a>
-                </li>
-                <li className="text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                  <a href="/team">
-                    Team
-                  </a>
-                </li>
-                <li className="text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                  <a href="/">
-                    Home
-                  </a>
-                </li>
+                  
+                  <Link href="/about" >
+                      <li className="text-xl rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                              About
+                      </li>
+                  </Link>
+                  
+                  <Link href="/product" >
+                      <li className="text-xl rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                              Product
+                      </li>
+                  </Link>
+                  
+                  <Link href="/team" >
+                      <li className="text-xl rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                              Team
+                      </li>
+                  </Link>
+                  
+                  <Link href="/" >
+                      <li className="text-xl rounded-full text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                              Home
+                      </li>
+                  </Link>
+
               </ul>
             </div>
           </div>
