@@ -16,10 +16,10 @@ const page = () => {
 
             <div className='flex flex-wrap items-center justify-center gap-8'>
 
-                <CardServicesPrice title={"Essential"} price={15} listBenefit={[]}/>
-                <CardServicesPrice title={"Team"} price={49} listBenefit={[]}/>
-                <CardServicesPrice title={"Enterprise"} price={99} listBenefit={[]}/>
-                <CardServicesPrice title={"Elite"} price={199} listBenefit={[]}/>
+                <CardServicesPrice isMain={false} title={"Essential"} price={15} listBenefit={[]}/>
+                <CardServicesPrice isMain={true} title={"Team"} price={49} listBenefit={[]}/>
+                <CardServicesPrice isMain={false} title={"Enterprise"} price={99} listBenefit={[]}/>
+                <CardServicesPrice isMain={false} title={"Elite"} price={199} listBenefit={[]}/>
             
             </div>
 
