@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import CardServicesPrice from '../components/CardServicesPrice'
 import { ElitePackage, EnterprisePackage, EssentialPackage, TeamPackage } from '@/app/components/HomeServicePrice.config'
 
@@ -8,7 +7,6 @@ const page = () => {
   return (
     <>
     
-        <Navbar/>
         <div className='bg-[#ffc67e] px-20 py-40 flex flex-col items-center justify-center gap-10'>
 
             <div className='flex flex-col items-center justify-center text-center gap-4'>

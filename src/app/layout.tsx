@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ReduxProvider from '@/app/redux/provider'
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "./components/Navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,8 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
           <ReduxProvider>
+            <Navbar/>
               {children}
-            </ReduxProvider>
+          </ReduxProvider>
         </body>
     </html>
   );

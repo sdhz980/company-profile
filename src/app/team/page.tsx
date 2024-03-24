@@ -1,8 +1,7 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import Navbar from '../components/Navbar'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getTeamMemberLength, setTeamMember } from '@/lib/redux/globalSlicer'
+import { setTeamMember } from '@/lib/redux/globalSlicer'
 import { RootState } from '@/lib/redux/store'
 import getTeamMember from '../api/getTeamMember'
 import Image from 'next/image'
@@ -25,8 +24,6 @@ const page = () => {
 
   return (
     <>
-    
-        <Navbar/>
 
             <div className='bg-[#6000C4] md:px-20 px-4 py-40 flex items-center justify-center'>
                 
@@ -107,7 +104,6 @@ const page = () => {
                 </div>
 
             </div>
-
 
     </>
   )

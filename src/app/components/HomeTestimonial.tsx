@@ -1,7 +1,6 @@
 'use client'
 import React , {useState} from "react"
 import Autoplay from "embla-carousel-autoplay"
-import { Card, CardContent } from "@/components/ui/card"
 import {
   Carousel,
   CarouselContent,

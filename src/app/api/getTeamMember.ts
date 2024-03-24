@@ -1,8 +1,5 @@
 import { BASE_URL } from '@/lib/ENV';
 import axios from 'axios'
-import React from 'react'
-
-
 
 const getTeamMember = async() => {
     try {

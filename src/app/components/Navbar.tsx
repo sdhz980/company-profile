@@ -1,16 +1,13 @@
 'use client'
 import { setNavbarMobile } from '@/lib/redux/globalSlicer';
 import { RootState } from '@/lib/redux/store';
-import { SquareChevronLeft, SquareMenu } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 
 const Navbar = () => {
     const navbarMobile = useSelector((state : RootState) => state.globalReducer.store.navbarMobileShow)
     const dispatch = useDispatch();
-    const theme = useSelector((state : RootState) => state.globalReducer.store.navbarDarkTheme)
 
     const handleMenuMobile = () => {
         dispatch(setNavbarMobile(!navbarMobile))

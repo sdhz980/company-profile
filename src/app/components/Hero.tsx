@@ -1,6 +1,4 @@
-'use client'
-import Image from 'next/image'
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 
 const Hero = () => {
 

@@ -1,14 +1,10 @@
-'use client'
 import React from 'react'
 import {
     Card,
     CardContent,
-    CardDescription,
     CardFooter,
     CardHeader,
-    CardTitle,
   } from "@/components/ui/card"
-  import { buttonVariants } from "@/components/ui/button"
   import { Button } from "@/components/ui/button"
 import { Check } from 'lucide-react'
 
