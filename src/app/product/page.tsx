@@ -18,10 +18,10 @@ const page = () => {
 
             <div className='flex flex-wrap items-center justify-center gap-8'>
 
-                <CardServicesPrice title={"Essential"} isMain={false} price={15} listBenefit={[EssentialPackage]}/>
-                <CardServicesPrice title={"Team"} isMain={true} price={49} listBenefit={[TeamPackage]}/>
-                <CardServicesPrice title={"Enterprise"} isMain={false} price={99} listBenefit={[EnterprisePackage]}/>
-                <CardServicesPrice title={"Elite"} isMain={false} price={199} listBenefit={[ElitePackage]}/>
+                <CardServicesPrice title={"Essential"} isMain={false} price={15} listBenefit={EssentialPackage}/>
+                <CardServicesPrice title={"Team"} isMain={true} price={49} listBenefit={TeamPackage}/>
+                <CardServicesPrice title={"Enterprise"} isMain={false} price={99} listBenefit={EnterprisePackage}/>
+                <CardServicesPrice title={"Elite"} isMain={false} price={199} listBenefit={ElitePackage}/>
 
             </div>
 
