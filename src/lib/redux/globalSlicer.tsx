@@ -4,13 +4,15 @@ interface GlobalInitialState {
     store: {
         isNavbarMobile : boolean;
         navbarDarkTheme : boolean;
+        navbarMobileShow : boolean;
     }
 }
 
 const initialState : GlobalInitialState = {
    store: {
         isNavbarMobile : false,
-        navbarDarkTheme : false
+        navbarDarkTheme : false,
+        navbarMobileShow : false
    }
 }
 
@@ -20,6 +22,10 @@ export const global = createSlice({
     reducers: {
         setNavbarTheme : (state , action : PayloadAction<boolean>) => {
             state.store.navbarDarkTheme = action.payload;
+        },
+
+        setNavbarMobile : (state , action : PayloadAction<boolean>) => {
+            state.store.navbarMobileShow = action.payload;
         }
 
         // setLoading: (state,action : PayloadAction<string>) => {
@@ -28,5 +34,5 @@ export const global = createSlice({
     }
 })
 
-export const { setNavbarTheme } = global.actions;
+export const { setNavbarTheme , setNavbarMobile } = global.actions;
 export default global.reducer;

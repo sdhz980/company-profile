@@ -3,11 +3,11 @@ import React from 'react'
 
 const HomeRating = () => {
   return (
-    <div className='flex flex-col items-center justify-center gap-4 px-[7%] py-[7%]'>
+    <div className='flex flex-col items-center justify-center gap-8 px-[7%] py-[7%]'>
         <h1 className='text-4xl font-bold'>Over 3,000 reviews & ratings</h1>
         <p>Highly rated by thousands of customers all over the world</p>
 
-        <div className='grid grid-cols-6 gap-20 mt-4'>
+        <div className='grid md:grid-cols-6 grid-cols-2 md:gap-20 gap-10 mt-4'>
             
 
                 <div className='flex flex-col items-center justify-center'>

@@ -7,7 +7,7 @@ const HomeServicesPrice = () => {
     <div className='flex flex-col gap-10 items-center justify-center px-10 py-20'>
 
         <div className='flex flex-col gap-4 items-center justify-center'>
-            <h1 className='font-bold text-4xl'>Plans for teams of all sizes</h1>
+            <h1 className='font-bold md:text-4xl text-2xl text-center'>Plans for teams of all sizes</h1>
             <p>Per month,billed annualy in USD</p> 
         </div>
 
@@ -20,7 +20,7 @@ const HomeServicesPrice = () => {
             
         </div>
 
-        <div className='flex flex-col items-center justify-center mt-4 gap-4'>
+        <div className='flex flex-col items-center text-center justify-center mt-4 gap-4'>
             <h2 className='text-xl font-bold'>All Support plans come with the Lite version of Chat, Talk and Guide</h2>
             <p>Prices shown are biled annualy, For prices billed month-to-month, and above subscriptions include Explore Lite reporting</p>
         </div>

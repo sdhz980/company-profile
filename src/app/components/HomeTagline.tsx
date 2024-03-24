@@ -2,14 +2,14 @@ import React from 'react'
 
 const HomeTagline = () => {
   return (
-    <div className='flex flex-wrap px-[7%] py-[7%] items-center justify-center gap-4'>
+    <div className='flex flex-wrap px-[7%] py-[7%] items-center justify-center gap-10'>
 
         <div className='flex flex-wrap px-[15%] justify-center text-center'>
             <h1 className='font-bold text-4xl'>Be fast and friendly</h1>
             <p>Oval Supports puts all your customer support interactions in one place, so communication is seamless, personal, and efficient</p>
         </div>
 
-        <div className='flex flex-row gap-8'>
+        <div className='flex md:flex-row flex-col gap-10'>
 
             <div className='flex flex-col items-center gap-4 h-[200px] w-[300px]'>
 

@@ -4,7 +4,7 @@ const HomeOverview = () => {
   return (
     <div className='flex items-center flex-col px-[7%] py-[7%] gap-10'>
         <div className='flex flex-col items-center gap-6 text-center'>
-            <div className='w-[40%]'>
+            <div className='md:w-[40%]'>
                 <h1 className='font-bold text-3xl tracking-wide'>Make it easy to manage customer interactions</h1>
             </div>
             
