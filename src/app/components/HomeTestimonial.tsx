@@ -17,7 +17,7 @@ const HomeTestimonial = () => {
   return (
     <div className={`flex md:px-[20%] px-5 md:py-[10%] py-5 items-center justify-center transition-all`}>
         <Carousel onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)} 
-            className="w-full max-w-2xl h-[20%]" plugins={ hover ? [] : [Autoplay({ delay:3000,stop:true })] }>
+            className="w-[60vw] max-w-2xl" plugins={ hover ? [] : [Autoplay({ delay:3000,stop:true })] }>
             <CarouselContent className="flex items-center">
 
                 <CarouselItem>
