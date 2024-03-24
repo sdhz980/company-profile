@@ -19,11 +19,11 @@ const Navbar = () => {
   return (
 
     <>
-<div className='transition-all'>
+    <div className='transition-all'>
       <nav className="w-full fixed top-0 left-0 right-0 z-10">
-        <div className={`justify-between ${ navbarMobile ? "bg-black" : ""} px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8`}>
+        <div className={`justify-between ${ navbarMobile ? "bg-[#6000c4]" : "bg-[#6000c4]"} px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8`}>
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="flex items-center justify-between py- md:py-1 md:block">
               {/* LOGO */}
               <Link href="/">
               <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 48 48">
@@ -33,11 +33,11 @@ const Navbar = () => {
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
                 <button
-                  className="text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="text-gray-700 rounded-md outline-none"
                   onClick={handleMenuMobile}
                 >
 
-                <svg className={`w-8 h-8 transition-all ${navbarMobile ? "rotate-0" : "rotate-180"}`}  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 21H12C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3H11M11 16L15 12M15 12L11 8M15 12H3" stroke={`${ navbarMobile? "#ffff" : "#000000" }`} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                <svg className={`w-8 h-8 transition-all ${navbarMobile ? "rotate-0" : "rotate-180"}`}  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 21H12C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3H11M11 16L15 12M15 12L11 8M15 12H3" stroke={`${ navbarMobile? "#ffff" : "#ffff" }`} stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
 
                 </button>
               </div>
@@ -50,25 +50,25 @@ const Navbar = () => {
               }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex ">
-                <li className="pb-6 text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                  <Link href="#about" onClick={handleMenuMobile}>
-                    About
-                  </Link>
+                <li className="text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                    <a href="/about">
+                        About
+                    </a>
                 </li>
-                <li className="pb-6 text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                  <Link href="#blog" onClick={handleMenuMobile}>
-                    Blogs
-                  </Link>
+                <li className="text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                  <a href="/product">
+                    Product
+                  </a>
                 </li>
-                <li className="pb-6 text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                  <Link href="#contact" onClick={handleMenuMobile}>
-                    Contact
-                  </Link>
+                <li className="text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                  <a href="/team">
+                    Team
+                  </a>
                 </li>
-                <li className="pb-6 text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
-                  <Link href="#projects" onClick={handleMenuMobile}>
-                    Projects
-                  </Link>
+                <li className="text-xl text-white hover:text-black py-2 px-6 text-center hover:bg-white">
+                  <a href="/">
+                    Home
+                  </a>
                 </li>
               </ul>
             </div>
