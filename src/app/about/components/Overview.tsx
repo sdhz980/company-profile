@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Overview = () => {
@@ -14,7 +15,7 @@ const Overview = () => {
                     </div>
 
                     <div className='grow'>
-                        <img className='h-[20vh] w-[100%] object-cover rounded-2xl' src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3Jvd2QlMjBvZiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+                        <Image src='/overview.avif' alt='overview' width={1000} height={1000} loading='lazy' placeholder='blur' blurDataURL='data:...' quality={80} className='h-[20vh] w-[100%] object-cover rounded-2xl'/>
                     </div>
             </div>
 

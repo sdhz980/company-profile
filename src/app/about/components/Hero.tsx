@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button'
+import Image from 'next/image'
 import React from 'react'
 
 const Hero = () => {
@@ -13,9 +14,15 @@ const Hero = () => {
         </div>
 
         <div className='flex md:flex-row flex-col w-full gap-8 md:h-[20vw] px-8 justify-center'>
-            <img style={{ translate: "0px -10px" }} className='md:h-[60%] md:w-[100%] w-[70%] rounded-xl object-cover' src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="" />
-            <img style={{ translate: "0px -10px" }} className='md:h-[80%] md:w-[100%] w-[60%] rounded-xl object-cover self-end' src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="" />
-            <img style={{ translate: "0px 10px" }} className='md:h-[70%]  md:w-[100%] w-[80%] rounded-xl object-cover' src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="" />
+            <Image src='/employee1.jpg' alt='employee1' blurDataURL='data:...' placeholder='blur' loading='lazy' 
+            width={1500} height={1000} style={{ translate: "0px -10px" }} className='md:h-[60%] md:w-[100%] w-[70%] rounded-xl object-cover' />
+            
+            <Image src='/employee2.jpg' alt='employee1' blurDataURL='data:...' placeholder='blur' loading='lazy' 
+            width={1500} height={1000} style={{ translate: "0px -10px" }} className='md:h-[80%] md:w-[100%] w-[60%] rounded-xl object-cover self-end' />
+            
+            <Image src='/employee3.jpg' alt='employee1' blurDataURL='data:...' placeholder='blur' loading='lazy' 
+            width={1500} height={1000} style={{ translate: "0px 10px" }} className='md:h-[70%]  md:w-[100%] w-[80%] rounded-xl object-cover' />
+
         </div>
 
     </div>
