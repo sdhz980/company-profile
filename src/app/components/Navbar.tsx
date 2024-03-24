@@ -21,7 +21,7 @@ const Navbar = () => {
     <>
     <div className='transition-all'>
       <nav className="w-full fixed top-0 left-0 right-0 z-10">
-        <div className={`justify-between ${ navbarMobile ? "bg-[#6000c4]" : "bg-[#6000c4]"} px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8`}>
+        <div className={`justify-between ${ navbarMobile ? "bg-[#6000c4]" : "bg-[#6000c4]"} px-4 mx-auto w-full md:items-center md:flex md:px-8`}>
           <div>
             <div className="flex items-center justify-between py- md:py-1 md:block">
               {/* LOGO */}

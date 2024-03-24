@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const HomeOverview = () => {
@@ -12,7 +13,7 @@ const HomeOverview = () => {
                 <p className='text-sm'>Oval is intuitive, and it's built with support agents in mind. Everything they need lives in a single, dynamic help desk interface so it's easy to be productive and manage customer interactions.</p>
             </div>
         </div>
-        <img src="/chart.png" alt="" width="100%"/>
+        <Image src="/chart2.svg" alt='chart' width={1920} height={1080} quality={80} className='w-[90%]' loading='lazy' draggable={false} />
     </div>
   )
 }
