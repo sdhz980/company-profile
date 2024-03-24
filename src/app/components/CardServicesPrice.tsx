@@ -25,7 +25,7 @@ const CardServicesPrice = ({title ,price ,listBenefit,isMain} :CardServiceProps)
     <Card className={`w-[300px] rounded-xl ${isMain ? "border-2 border-[#6000C4]" : ""}`}>
 
         <CardHeader className='flex items-center text-center gap-4'>
-            <CardTitle className='text-xl'>{title}</CardTitle>
+            <h1 className='text-xl font-bold'>{title}</h1>
             <div className='flex justify-center md:py-0 py-8 gap-3 items-center rounded-sm w-[110%] h-[8vw] bg-gray-400 bg-opacity-20'> 
                 <h1 className='text-4xl font-bold'>${price}</h1>
                 <p className='font-light text-xsm'>12 people</p>
