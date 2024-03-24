@@ -17,11 +17,12 @@ interface CardServiceProps {
     title : string;
     price: number;
     listBenefit: [];
+    isMain: boolean;
 }
 
-const CardServicesPrice = ({title ,price ,listBenefit} :CardServiceProps) => {
+const CardServicesPrice = ({title ,price ,listBenefit,isMain} :CardServiceProps) => {
   return (
-    <Card className='w-[300px] rounded-xl'>
+    <Card className={`w-[300px] rounded-xl ${isMain ? "border-2 border-[#6000C4]" : ""}`}>
 
         <CardHeader className='flex items-center text-center gap-4'>
             <CardTitle className='text-xl'>{title}</CardTitle>
@@ -36,8 +37,8 @@ const CardServicesPrice = ({title ,price ,listBenefit} :CardServiceProps) => {
         </CardContent>
 
         <CardFooter className='grid gap-4 w-full'>
-            <Button variant="outline" className='rounded-full bg-purple-500 border-purple-500 text-white'>START TRIAL</Button>
-            <Button variant="outline" className='rounded-full border-purple-500 text-purple-500'>BUY NOW</Button>
+            <Button variant="outline" className='rounded-full bg-[#6000C4] border-[#6000C4] text-white'>START TRIAL</Button>
+            <Button variant="outline" className='rounded-full border-[#6000C4] text-[#6000C4]'>BUY NOW</Button>
         </CardFooter>
 
     </Card>

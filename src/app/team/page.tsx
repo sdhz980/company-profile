@@ -7,7 +7,7 @@ const page = () => {
     
         <Navbar/>
 
-            <div className='bg-purple-500 px-20 py-40 flex items-center justify-center'>
+            <div className='bg-[#6000C4] px-20 py-40 flex items-center justify-center'>
                 
                 <div className='w-[60%] text-center'>
                     <h1 className='text-5xl font-bold text-white'>Our mission is to empower teams to create the next big thing</h1>
@@ -34,21 +34,21 @@ const page = () => {
                     
                     <div className='flex flex-row flex-wrap items-center justify-center'>
                         <div className='flex flex-col gap-4'>
-                            <div className='w-20 h-20 rounded-full bg-[#ffc67e] flex items-center justify-center text-white text-xl font-bold'>2</div>
+                            <div className='w-20 h-20 rounded-full bg-[#FFB353] flex items-center justify-center text-white text-xl font-bold'>2</div>
                             <p className='font-semibold text-lg'>Cultivate relational mastery</p>
                         </div>
                     </div>
                     
                     <div className='flex flex-row flex-wrap items-center justify-center'>
                         <div className='flex flex-col gap-4'>
-                            <div className='w-20 h-20 rounded-full bg-purple-500 flex items-center justify-center text-white text-xl font-bold'>3</div>
+                            <div className='w-20 h-20 rounded-full bg-[#6000C4] flex items-center justify-center text-white text-xl font-bold'>3</div>
                             <p className='font-semibold text-lg'>Create customer transformation</p>
                         </div>
                     </div>
                     
                     <div className='flex flex-row flex-wrap items-center justify-center'>
                         <div className='flex flex-col gap-4'>
-                            <div className='w-20 h-20 rounded-full bg-[#ffefdb] flex items-center justify-center text-black text-xl font-bold'>4</div>
+                            <div className='w-20 h-20 rounded-full bg-[#FFEFDB] flex items-center justify-center text-black text-xl font-bold'>4</div>
                             <p className='font-semibold text-lg'>Do the extraordinary</p>
                         </div>
                     </div>

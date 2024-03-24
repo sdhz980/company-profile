@@ -9,7 +9,7 @@ const Hero = () => {
 
         <div className='px-20 w-[65%] flex flex-col gap-8 items-center justify-center'>
             <h1 className='text-5xl text-center font-bold'>We help people become their best selves to create highly-engaged, high performing organizations, starting with ours.</h1>
-            <Button className='bg-[#ffc67e] rounded-full text-black'>View open positions</Button>
+            <Button className='bg-[#FFB353] rounded-full text-black'>View open positions</Button>
         </div>
 
         <div className='flex w-full gap-8 h-[20vw] justify-center'>

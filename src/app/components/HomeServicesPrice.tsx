@@ -13,10 +13,10 @@ const HomeServicesPrice = () => {
 
         <div className='flex flex-row flex-wrap gap-10 items-center justify-center'>
 
-            <CardServicesPrice title={"Essential"} price={15} listBenefit={[]}/>
-            <CardServicesPrice title={"Team"} price={49} listBenefit={[]}/>
-            <CardServicesPrice title={"Enterprise"} price={99} listBenefit={[]}/>
-            <CardServicesPrice title={"Elite"} price={199} listBenefit={[]}/>
+            <CardServicesPrice title={"Essential"} isMain={false} price={15} listBenefit={[]}/>
+            <CardServicesPrice title={"Team"} isMain={true} price={49} listBenefit={[]}/>
+            <CardServicesPrice title={"Enterprise"} isMain={false} price={99} listBenefit={[]}/>
+            <CardServicesPrice title={"Elite"} isMain={false} price={199} listBenefit={[]}/>
             
         </div>
 
