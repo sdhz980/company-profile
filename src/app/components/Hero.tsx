@@ -26,7 +26,7 @@ const Hero = () => {
 
         </div>
 
-            <Image className='md:absolute md:pt-0 pt-8 md:w-[35%] bottom-0 right-0' src="/mind.svg" loading='lazy' quality={40} alt='mindMap' width={800} height={800} />
+            <Image className='md:absolute md:pt-0 pt-8 md:w-[35%] bottom-0 right-0' src="/mind.svg" loading='lazy' quality={10} alt='mindMap' width={400} height={400} />
        
     </div>
   
