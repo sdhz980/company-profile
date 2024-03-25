@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
+  reactStrictMode: false,
+  experimental: { optimizeCss: true },  
+  images: {
         remotePatterns: [
           {
             protocol: 'https',

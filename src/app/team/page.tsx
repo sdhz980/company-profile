@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setTeamMember } from '@/lib/redux/globalSlicer'
 import { RootState } from '@/lib/redux/store'
-import getTeamMember from '../api/getTeamMember'
+import getTeamMember from '@/api/getTeamMember'
 import Image from 'next/image'
 
 const page = () => {
@@ -13,7 +13,7 @@ const page = () => {
 
     const handleGetTeamMember = async() => {
         if (!teamMember.length) {
-            const response = await getTeamMember();
+            const response = await getTeamMember()
             dispatch(setTeamMember(response.results))
         }
     }
@@ -84,7 +84,6 @@ const page = () => {
                     
 
                 { teamMember?.map((item:any,index:number) => {
-                        console.log(item);
                         const name = `${item?.name?.first} ${item?.name?.last}`; 
                         return (
 
