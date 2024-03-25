@@ -1,9 +1,11 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Hero = () => {
 
   return (
-    <div className='bg-[#6000C4] h-full w-full md:px-32 md:py-56 px-10 py-24'>
+
+    <div className='bg-[#6000C4] w-full md:px-20 md:py-40 px-10 py-24 relative'>
 
         <div className='flex flex-col md:gap-6 gap-8'>
 
@@ -23,6 +25,8 @@ const Hero = () => {
             </div>
 
         </div>
+
+            <Image className='md:absolute md:pt-0 pt-8 md:w-[35%] bottom-0 right-0' src="/mind.svg" alt='mindMap' width={800} height={800} />
        
     </div>
   

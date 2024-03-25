@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
 
-            <section className="h-[720px]"> <Hero/> </section>
+            <section className=""> <Hero/> </section>
             <section className="bg-[#fcf9f6]"> <HomeTagline/> </section>
             <section className="bg-[#fcf9f6]"> <HomeOverview/> </section>
             <section className="bg-[#fcf9f6]"> <ProductOverviewComponent/> </section>

@@ -15,7 +15,7 @@ const Overview = () => {
                     </div>
 
                     <div className='grow'>
-                        <Image src='/overview.avif' alt='overview' width={1000} height={1000} loading='lazy' placeholder='blur' blurDataURL='data:...' quality={80} className='h-[20vh] w-[100%] object-cover rounded-2xl'/>
+                        <Image src='/overview.avif' alt='overview' width={1000} height={1000} loading='lazy' placeholder='blur' blurDataURL='data:...' quality={40} className='h-[20vh] w-[100%] object-cover rounded-2xl'/>
                     </div>
             </div>
     

@@ -15,13 +15,13 @@ const Hero = () => {
 
         <div className='flex md:flex-row flex-col w-full gap-8 md:h-[20vw] px-8 justify-center'>
             <Image src='/employee1.jpg' alt='employee1' blurDataURL='data:...' placeholder='blur' loading='lazy' 
-            width={1500} height={1000} style={{ translate: "0px -10px" }} className='md:h-[60%] md:w-[100%] w-[70%] rounded-xl object-cover' />
+            quality={40} width={1500} height={1000} style={{ translate: "0px -10px" }} className='md:h-[60%] md:w-[100%] w-[70%] rounded-xl object-cover' />
             
             <Image src='/employee2.jpg' alt='employee1' blurDataURL='data:...' placeholder='blur' loading='lazy' 
-            width={1500} height={1000} style={{ translate: "0px -10px" }} className='md:h-[80%] md:w-[100%] w-[60%] rounded-xl object-cover self-end' />
+            quality={40} width={1500} height={1000} style={{ translate: "0px -10px" }} className='md:h-[80%] md:w-[100%] w-[60%] rounded-xl object-cover self-end' />
             
             <Image src='/employee3.jpg' alt='employee1' blurDataURL='data:...' placeholder='blur' loading='lazy' 
-            width={1500} height={1000} style={{ translate: "0px 10px" }} className='md:h-[70%]  md:w-[100%] w-[80%] rounded-xl object-cover' />
+            quality={40} width={1500} height={1000} style={{ translate: "0px 10px" }} className='md:h-[70%]  md:w-[100%] w-[80%] rounded-xl object-cover' />
 
         </div>
 
