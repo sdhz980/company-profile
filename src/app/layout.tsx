@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import ReduxProvider from '@/app/redux/provider'
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({
           <ReduxProvider>
             <Navbar/>
               {children}
+            <Footer/>
           </ReduxProvider>
         </body>
     </html>
