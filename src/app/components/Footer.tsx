@@ -51,9 +51,9 @@ const Footer = () => {
                         </svg>
             
             <div className='hidden md:flex gap-4 flex-row'>
-                <Image className='w-8' src="/facebook.svg" alt='facebook' width={1000} height={1000}/>
-                <Image className='w-8' src="/facebook.svg" alt='facebook' width={1000} height={1000}/>
-                <Image className='w-8' src="/facebook.svg" alt='facebook' width={1000} height={1000}/>
+                <Image className='w-8' src="/facebook.svg" loading='lazy' quality={1} alt='facebook' width={1000} height={1000}/>
+                <Image className='w-8' src="/ig.svg" loading='lazy' quality={1} alt='facebook' width={1000} height={1000}/>
+                <Image className='w-8' src="/linkedin.svg" loading='lazy' quality={1} alt='facebook' width={1000} height={1000}/>
             </div>
 
             <p className='font-semibold'>@2024 Spoon</p>
